@@ -34,10 +34,10 @@ const SignupForm = () => {
         username
       });
       console.log('Signup successful:', response.data);
-      navigate('/signin');
+      navigate('/new-dep/signin');
       // Navigate to the sign-in page after successful sign-up
     } catch (error) {
-        navigate('/signin');
+        navigate('/new-dep/signin');
       console.error('Signup failed:', error.response ? error.response.data : error.message);
       //setError(error.response ? error.response.data.message : error.message);
     }

@@ -22,12 +22,12 @@ export function App() {
       <Routes>
         <Route path="/new-dep/" element={<LandingPage />} />
         <Route path="/new-dep/home" element={<Home/>}/>
-        <Route path="/signup" element={<SignupForm />} />
-        <Route path="/signin" element={<SigninForm />} />
-        <Route path="/Calendar" element={<CalendarView/>}/>
-        <Route path="/notes" element={<NotesPage/>}/>
-        <Route path="/safety" element={<SafetyPage/>}/>
-        <Route path="/facts" element={<Knowledge/>}/>
+        <Route path="/new-dep/signup" element={<SignupForm />} />
+        <Route path="/new-dep/signin" element={<SigninForm />} />
+        <Route path="/new-dep/Calendar" element={<CalendarView/>}/>
+        <Route path="/new-dep/notes" element={<NotesPage/>}/>
+        <Route path="/new-dep/safety" element={<SafetyPage/>}/>
+        <Route path="/new-dep/facts" element={<Knowledge/>}/>
       </Routes>
     </Router>
   );

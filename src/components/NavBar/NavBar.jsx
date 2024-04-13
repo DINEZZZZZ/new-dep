@@ -13,25 +13,25 @@ const NavBar = () => {
           <img src={logo} alt="Logo" className="h-8" />
           <h4 className="text-white font-bold ml-2">Wemonly</h4>
         </div>
-        {/* Conditionally render the ul only on medium screens and above */}
+       
         <ul className="hidden md:flex space-x-4">
           <li>
-            <Link to="/home" className="text-white hover:text-gray-300">
+            <Link to="/new-dep/home" className="text-white hover:text-gray-300">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/calendar" className="text-white hover:text-gray-300">
+            <Link to="/new-dep/calendar" className="text-white hover:text-gray-300">
               Calendar
             </Link>
           </li>
           <li>
-            <Link to="/safety" className="text-white hover:text-gray-300">
+            <Link to="/new-dep/safety" className="text-white hover:text-gray-300">
               Safety
             </Link>
           </li>
         </ul>
-        <Link to="/" className="text-white hover:text-gray-300">
+        <Link to="/new-dep/" className="text-white hover:text-gray-300">
               <FontAwesomeIcon icon={faSignOutAlt} /> Logout
             </Link>
       </div>

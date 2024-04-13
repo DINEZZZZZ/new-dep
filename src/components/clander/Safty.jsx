@@ -13,7 +13,7 @@ const SafetyPage = () => {
   const navigate=useNavigate();
 
   const navi = ()=>{
-    navigate('/home');
+    navigate('/new-dep/home');
   }
 
   useEffect(() => {

@@ -30,7 +30,7 @@ const AccordionItem = ({ trigger, content }) => {
     <div className='px-4 py-2'>
       <div className='flex items-center justify-between cursor-pointer' onClick={toggleAccordion}>
         <div>{trigger}</div>
-        <div>{isOpen ? <span>-</span> : <span>+</span>}</div>
+        <div>{isOpen ? <span>⩓</span> : <span>ⅴ</span>}</div>
       </div>
       {isOpen && <div className='mt-2 ml-4'>{content}</div>}
       <hr className='w-full mt-2' />
@@ -117,7 +117,7 @@ const Knowledge = () => {
   return (
     <div className='flex flex-col items-center'>
       <div className="flex justify-between w-full">
-        <Link to="/home" className="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</Link>
+        <Link to="/new-dep/home" className="m-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Back</Link>
         
       </div>
       <p className='text-2xl font-semibold text-center text-[#EA5D7A] mt-10'>

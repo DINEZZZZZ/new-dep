@@ -19,10 +19,10 @@
             password
         });
         console.log('Signin successful:', response.data);
-        navigate('/home');
+        navigate('/new-dep/home');
         
         } catch (error) {
-            navigate('/home');
+            navigate('/new-dep/home');
         console.error('Signin failed:', error.response ? error.response.data : error.message);
         setError(error.response ? error.response.data.message : error.message);
         }

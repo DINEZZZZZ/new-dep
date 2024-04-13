@@ -11,10 +11,10 @@ const LandingPage = () => {
         <img src={logimg} alt="" />
         <p className="text-lg mb-6">Choose to explore !</p>
         <div className="flex flex-col md:flex-row gap-4">
-          <Link to="/signup" className="button signup">
+          <Link to="/new-dep/signup" className="button signup">
             Sign Up
           </Link>
-          <Link to="/signin" className="button signin">
+          <Link to="/new-dep/signin" className="button signin">
             Sign In
           </Link>
         </div>
