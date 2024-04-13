@@ -21,7 +21,7 @@ export function App() {
     <Router >
       <Routes>
         <Route path="/new-dep/" element={<LandingPage />} />
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/new-dep/home" element={<Home/>}/>
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/signin" element={<SigninForm />} />
         <Route path="/Calendar" element={<CalendarView/>}/>
