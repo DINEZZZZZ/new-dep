@@ -20,7 +20,7 @@ export function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/new-dep/" element={<LandingPage />} />
         <Route path="/home" element={<Home/>}/>
         <Route path="/signup" element={<SignupForm />} />
         <Route path="/signin" element={<SigninForm />} />
