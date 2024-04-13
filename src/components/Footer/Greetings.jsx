@@ -1,6 +1,8 @@
 import React from "react";
-
-
+import morning from '../../../public/assets/dashboard/morning.png';
+import afternoon from '../../../public/assets/dashboard/afternoon.png';
+import evening from '../../../public/assets/dashboard/evening.png';
+import night from '../../../public/assets/dashboard/night.png';
 
 export default function Greeting({ userFirstName }) {
   const getGreeting = () => {
@@ -8,19 +10,19 @@ export default function Greeting({ userFirstName }) {
     let src, greeting, message;
 
     if (currentTime >= 5 && currentTime < 12) {
-      src = "morning";
+      src = morning;
       greeting = "Good Morning";
       message = "Start your day with a smile!";
     } else if (currentTime >= 12 && currentTime < 17) {
-      src = "afternoon";
+      src = afternoon;
       greeting = "Good Afternoon";
       message = "Enjoy your afternoon!";
     } else if (currentTime >= 17 && currentTime < 21) {
-      src = "evening";
+      src = evening;
       greeting = "Good Evening";
       message = "Have a pleasant evening!";
     } else {
-      src = "night";
+      src = night;
       greeting = "Good Night";
       message = "Have a peaceful sleep!";
     }
@@ -31,14 +33,13 @@ export default function Greeting({ userFirstName }) {
   return (
     <div className="">
       <div className="flex flex-col items-center justify-center space-y-4 bg-white dark:bg-gray-800 p-6  mt-5">
-      <img
-  src="../../../public/assets/dashboard/"
-  className="h-12 w-12 scale-[2.5]"
-  alt={`${getGreeting().greeting} Image`}
-/>
-
+        <img
+          src={getGreeting().src}
+          className="h-12 w-12 scale-[2.5]"
+          alt={`${getGreeting().greeting} Image`}
+        />
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-          {getGreeting().greeting} , {'Strong Lady'}
+          {getGreeting().greeting} ! {getGreeting().message} , {' My Strong Lady'}
         </h2>
     
       </div>
