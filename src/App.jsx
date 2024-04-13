@@ -18,7 +18,7 @@ export function App() {
 
 
   return (
-    <Router basename="/new-dep/">
+    <Router >
       <Routes>
         <Route path="/new-dep/" element={<LandingPage />} />
         <Route path="/home" element={<Home/>}/>
