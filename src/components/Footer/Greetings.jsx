@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 export default function Greeting({ userFirstName }) {
   const getGreeting = () => {
     const currentTime = new Date().getHours();
@@ -29,11 +31,12 @@ export default function Greeting({ userFirstName }) {
   return (
     <div className="">
       <div className="flex flex-col items-center justify-center space-y-4 bg-white dark:bg-gray-800 p-6  mt-5">
-        <img
-          src={`/assets/dashboard/${getGreeting().src}.png`}
-          className="h-12 w-12 scale-[2.5]"
-          alt={`${getGreeting().greeting} Image`}
-        />
+      <img
+  src="../../../public/assets/dashboard/"
+  className="h-12 w-12 scale-[2.5]"
+  alt={`${getGreeting().greeting} Image`}
+/>
+
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
           {getGreeting().greeting} , {'Strong Lady'}
         </h2>
